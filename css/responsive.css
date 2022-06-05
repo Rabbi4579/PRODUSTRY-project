@@ -40,5 +40,14 @@
     .header_location p{
         padding: 7px 0;
     }
-    
+
+    .banenr_item {
+        height: 600px;
+    }
+    .prevArrow i{
+        display: none;
+    }
+    .prevArrow .style {
+        display: none;
+    }
 }
