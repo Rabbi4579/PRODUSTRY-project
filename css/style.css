@@ -320,9 +320,29 @@ p {
  
 /* -----service part end------ */
 
+/* -----about part start------ */
+ #about_us{
+     padding: 50px 0;
+ }
+.about_left_bg{
+    background:url(../images/about_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.about_man{
+   float: right;
+   margin-right: -180px;
+
+}
+
+.about_right{
+    padding-right: 100px;
+}
+
+/* -----about part start------ */
 
 
-/* -----menu part start------ */
-/* -----menu part start------ */
 /* -----menu part start------ */
 /* -----menu part start------ */
