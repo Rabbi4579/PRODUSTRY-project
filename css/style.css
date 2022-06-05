@@ -340,7 +340,9 @@ p {
 .about_right{
     padding-right: 100px;
 }
-
+.about_right h2{
+    padding-bottom: 20px;
+}
 /* -----about part start------ */
 
 
