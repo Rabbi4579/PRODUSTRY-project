@@ -14,8 +14,8 @@ $(function($){
     // autoplay:true,
     autoplaySpeed:2000,
     speed:1500,
-    prevArrow:'<i class="fa-solid fa-angle-left pre_arrow"></i>',
-    nextArrow: '<i class="fa-solid fa-angle-right next_rrow"></i>',
+    prevArrow:'<li><i class="fa-solid fa-angle-left pre_arrow"></i></li>',
+    nextArrow: '<i class="fa-solid fa-angle-right next_arrow"></i>',
 
     
    })

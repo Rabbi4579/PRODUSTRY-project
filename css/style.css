@@ -244,25 +244,25 @@ p {
     z-index: 999;
     left: 30px;
     
+    
 }
-
-
-
-.next_rrow{
+.next_arrow{
     font-size: 35px;
     color: #ffffff;
     position: absolute;
-    bottom: 50%;
-    transform: translateY(50%);
+    top: 50%;
+    transform:translateY(-50%);
+    z-index: 999;
     right: 30px;
     
 }
 
 
-@media(max-width:570px){
-    .pre_arrow{
+@media(max-width:575.98px){
+    .next_arrow{
         display: none;
     }
+  
 }
 /* -----banner part end------ */
 
