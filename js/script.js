@@ -11,14 +11,15 @@ $(function($){
     //  slider js
     
    $('#banner').slick({
-    // autoplay:true,
-    autoplaySpeed:2000,
-    speed:1500,
-    prevArrow:'<li><i class="fa-solid fa-angle-left pre_arrow"></i></li>',
-    nextArrow: '<i class="fa-solid fa-angle-right next_arrow"></i>',
+    autoplay:true,
+    autoplaySpeed:4000,
+    speed:2000,
+    prevArrow:".banner_icon",
+    nextArrow: ".banner_icon",
 
     
    })
+   
 
    $('.servi_slider').slick({
        slidesToShow:3,
@@ -45,6 +46,14 @@ $(function($){
        
 
    });
+
+  //  counter js
+  $('.counter_up').counterUp({
+    delay: 50,
+    time: 1500
+});
+
+
 
 
 
