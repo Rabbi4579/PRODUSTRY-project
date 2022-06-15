@@ -111,5 +111,28 @@
         display: none;
     }
     /* protfolio part */
-   
+
+
+
+    /* footer part */
+    .foot_top_sec h3 { 
+        padding-bottom: 6px;
+    }
+    .foot_top_last h3 {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    .foot_img img {
+        width: 150px;
+        padding-top: 40px;
+    }
+    .foot_img {
+        margin-bottom: 16px;
+    }
+    /* .footer_bottom_items {
+        padding: 0 20px;
+    } */
+    #footer {
+        padding: 0 10px;
+    }
 }
