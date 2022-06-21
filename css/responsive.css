@@ -4,6 +4,12 @@
         padding: 0;
     }
 }
+@media(min-width:1920px){
+    .about_about_content{
+        max-width: 700px;
+        padding: 0;
+    }
+}
 @media(min-width:992px) and (max-width:1199.98px){
     .about_right{
        padding-right: 30px;
@@ -111,7 +117,9 @@
         display: none;
     }
     /* protfolio part */
-
+    #our_protfolio {
+        margin-bottom: 35px;
+    }
 
 
     /* footer part */
@@ -136,3 +144,31 @@
         padding: 0 10px;
     }
 }
+
+
+
+
+/* ----------------about page responsive------------------ */
+
+
+
+
+@media(max-width:575px){
+    .about_about_item {
+       padding-left: 0px
+    }
+    #about_about {
+        
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+    .about_about_item h2 {
+        padding-bottom: 20px;
+    }
+    .mission_content h2 {
+        padding-bottom: 18px;
+    }
+    #about_mission {
+        padding-bottom: 48px;
+    }
+};

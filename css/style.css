@@ -149,7 +149,7 @@ p {
 
 /* -----menu part start------ */
 .custom_nav{
-    padding: 20px 0;
+    padding: 35px 0;
 }
 .custom_nav .container{
     position: relative;
@@ -404,18 +404,65 @@ p {
 
 }
 
-/* .about_right{
-    padding-right: 100px;
-} */
+.nav-tabs{
+   
+        --bs-nav-tabs-border-width: 0;
+   
+}
+.nav-link {
+   
+    padding: 0px;
+
+}
+
 .about_right h2{
     padding-bottom: 20px;
     
+}
+.about_right ul {
+    border-bottom: 5px solid #dddddd;
+    padding-bottom: 10px;
+   
+}
+.about_right ul li{
+    position: relative;
+}
+.about_right ul li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 84px;
+    height: 5px;
+    background: var(--primary-color);
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .3s;
+}
+.about_right ul li:hover::after{
+   opacity: 1;
+   visibility: visible;
+}
+
+.about_right ul li button{
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.tap_button{
+    
+}
+.tap_button  li {
+    padding-right: 28px;
 }
 
 .tap_button.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
 	border-color:none;
 }
-
+.tab-content>.active {
+    padding-top: 20px;
+}
 
 
 
@@ -437,7 +484,7 @@ p {
 }
 
 .protfolio_itmes{
-    padding:0;
+    padding: 0 15px;
 }
 .protfolio_img{
     position: relative;
@@ -968,3 +1015,290 @@ visibility: hidden;}
     color:var(--primary-color);
 }
 /* ---------footer part end--------- */
+
+
+
+
+
+
+
+/* ====================about page start ========================================== */
+
+
+
+
+/* --------about banner part start-------- */
+#about_banner{
+    background: url(../images/about_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    position: relative;
+    z-index: 1;
+}
+#about_banner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+.about_banner_items ul li{
+    display: inline-block;
+}
+.about_banner_items h2{
+    color: #ffff;
+}
+
+.about_banner_items ul .active a{
+    color: var(--primary-color);
+}
+.about_banner_items ul li a{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+.about_banner_items ul li i{
+    color: #ffff;
+    font-size: 14px;
+    padding: 0 10px;
+}
+/* --------about banner part end-------- */
+
+/* --------about about part start-------- */
+#about_about{
+    padding: 100px 0;
+}
+.about_about_img{
+    background: url(../images/about_about_img-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+}
+.about_about_img::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.about_about_man {
+    position: absolute;
+    right: -132px;
+    top: -27px;
+    z-index: 999;
+}
+
+.about_about_item{
+    padding-left: 30px;
+}
+.about_about_item h2{
+    padding-bottom: 50px;
+}
+.about_about_item p{
+    padding-bottom: 20px;
+}
+/* ----------about about part end------------- */
+
+
+/* ----------mission part start--------------- */
+#about_mission{
+    padding-bottom: 100px;
+}
+.mission_content h2{
+    padding-bottom: 30px;
+}
+.mission_content ul{
+    padding-top: 40px;
+}
+.mission_content ul li{
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.mission_content ul li i{
+    font-size: 14px;
+    padding-right: 15px;
+    color: var(--primary-color);
+}
+
+.mission_img{
+    background: url(../images/about_about_img-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+}
+.mission_img::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.mission_man {
+    position: absolute;
+    left: -143px;
+    top: -29px;
+    z-index: 9999;
+}
+/* ----------mission part end--------------- */
+
+/* ----------about team part start---------- */
+#about_team{
+    padding-bottom: 100px;
+    position: relative;
+}
+.team_header{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.team_member{
+    height: 530px;
+    margin: 0 15px;
+}
+.team_image{
+    background: #f1f1f1;
+    text-align: center;
+    height: 380px;
+    padding-top: 10px;
+    /* overflow: hidden; */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+.team_image img{
+    margin: auto;
+}
+.team_content{
+    height: 130px;
+    background: var(--secondary-color);
+    margin-top: -30px;
+    color: #ffff;
+    text-align: center;
+    clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+    position: relative;
+    transition: all linear .3s;
+    overflow: hidden;
+}
+.team_text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+   
+}
+.team_text h2{
+     color: #ffff;
+}
+.team_text ul{
+    padding-bottom: 0;
+    display: none;
+}
+.team_text ul li a{
+    color: #ffff;
+    font-size: 18px;
+}
+.slick-center .team_member .team_text ul{
+    display: block;
+}
+.slick-center .team_member .team_content{
+    background: var(--primary-color);
+    height: 180px;
+    clip-path: polygon(0% 21%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+
+.arrow_left{
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.arrow_right{
+    top: 50%;
+    position: absolute;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.arrow_right span i,
+.arrow_left span i{
+    font-size: 40px;
+    transition: all linear .3s;
+    
+}
+.arrow_right:hover span i,
+.arrow_left:hover span i{
+    color: var(--primary-color);
+}
+.arrow_right::after,
+.arrow_left::after{
+    left: 0;
+    top: -5px;
+    height:calc(100% + 10px);
+    width: 1px;
+}
+.arrow_right::before,
+.arrow_left::before{
+    right: 0;
+    top: -5px;
+    height:calc(100% + 10px);
+    width: 1px;
+}
+.arrow_right span::after,
+.arrow_left span::after{
+    top: 0;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: 1px;
+}
+.arrow_right span::before,
+.arrow_left span::before{ 
+    bottom: 0;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: 1px; 
+}
+.arrow_right::after,
+.arrow_right::before,
+.arrow_right span::after,
+.arrow_right span::before,
+.arrow_left::after,
+.arrow_left::before,
+.arrow_left span::after,
+.arrow_left span::before{
+    content: "";
+    position: absolute;
+    background: var(--primary-color);
+    transform: scale(0);
+    transition: all linear .3s;
+}
+.arrow_right:hover:after,
+.arrow_right:hover:before,
+.arrow_right:hover span::after,
+.arrow_right:hover span::before,
+.arrow_left:hover:after,
+.arrow_left:hover:before,
+.arrow_left:hover span::after,
+.arrow_left:hover span::before{
+    transform: scale(1);
+}

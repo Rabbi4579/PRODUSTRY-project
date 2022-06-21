@@ -92,7 +92,20 @@ $(function ($) {
     centerPadding: '0px',
     prevArrow: ".pre_arrow",
     nextArrow: ".next_arrow",
-    asNavFor: '.testimonial_content_slider'
+    asNavFor: '.testimonial_content_slider',
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+  ]
   });
 
 
@@ -103,7 +116,85 @@ $(function ($) {
     centerPadding: '0px',
     arrows: false,
     prevArrow: '',
-    nextArrow: ''
+    nextArrow: '',
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+  ]
 
   })
+
+
+  // protfolio slider
+  $('.protfolio_slider').slick({
+    slidesToShow:4,
+    arrows:false,
+    centerPadding: '0px',
+
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
+  })
+
+
+
+  // team part js
+  $('.team_slider').slick({
+    slidesToShow:3,
+    arrows:true,
+    centerMode: true,
+    centerPadding: '0px',
+    prevArrow:'.arrow_left',
+    nextArrow:'.arrow_right',
+
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        centerMode: false,
+        arrows:false,
+      }
+    },
+
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        
+      }
+    },
+
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
+  });
+
+
+
+
+
+
 });
